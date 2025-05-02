@@ -1,7 +1,7 @@
 <?php
 
         try{
-            $conexion= new PDO('mysql:host=localhost; dbname=galerias', 'root', '12345678');
+            $conexion= new PDO('mysql:host=localhost; dbname=galerias', 'USUARIO_DB', 'PASS_DB');
             return $conexion;
 
             if(!$conexion){
