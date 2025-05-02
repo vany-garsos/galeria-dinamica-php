@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.comentario {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.box-perfil {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 45px;
+}
+
+.box-perfil img {
+    position: absolute;
+    max-height: 125px;
+    max-width: 125px;
+}
+
+.box-mensaje {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 150px); /* Ajuste del ancho para adaptarse al contenedor */
+    padding: 2%;
+    border-radius: 3px;
+    font-size: 15px;
+    height: 80px;
+}
+
+.box-mensaje .nombre{
+    position: absolute;
+    font-size: 14px;
+    color: #efb2ef;
+    margin-top: -35px;
+}
+
+.box-mensaje .fecha_publicacion{
+    position: absolute;
+    font-size: 14px;
+    color: #c8adc8;
+    margin-top: -35px;
+    margin-left: 14%;
+
+}
+
+.box-mensaje .opinion{
+    color: #000000 !important;
+}
+
+.box-mensaje::before {
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 31px;
+    background-color: transparent;
+    top: 31px;
+    left: -37px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 35px solid white;
+}
+.foto_predeterminada{
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+.foto_predeterminada img{
+    position: absolute;
+    max-width:125px;
+    max-height: 125px;
+}
+
+.foto_predeterminada video{
+    position: absolute;
+    max-width:125px;
+    max-height: 125px;
+}
+.foto_integrante{
+    position: relative;
+    width: 100px;
+    height: 141px;
+    margin: 0 auto;
+}
+
+
+
+.foto_integrante img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.btn_cambiar_foto{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_cambiar_foto label{
+    border-radius: 5px;
+    border: 2px solid white;
+    height: 30px;
+    width: 30px;
+    background-color: #ff0000;
+    color: #ffff;
+}
+
+
+
+/*registrarse*/
+.registrarse{
+    color: white;
+}
+
+/*login*/
+#contenido-modal{
+    width: 60%;
+    background-color: #222222;
+     color:white
+
+}
+
+.modal-login{
+    width: 60%;
+    height: 450px;
+    background-color:#000000;
+    color: white;
+}
+.inputlogin{
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    margin-top: 5%;
+    color: white;
+}
+
+.ingresar{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingresar i{
+    margin-right: 14px;
+    margin-top: 16px;
+}
+
+.ingresar-registrarse{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+    margin-bottom: 8%;
+}
+.inputregistrarse{
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background: transparent;
+    margin-top: 5%;
+    color: rgb(0, 0, 0);
+}
+
+.ingresar-registrarse i{
+    margin-right: 14px;
+    margin-top: 27px;
+}
+
+/*subir comentarios*/
+.contenedor-buzon{
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.icon-buzzon{
+    display: flex;
+    justify-content: center;
+    font-size: 150px;
+    color: white;
+    box-shadow: 10px 10px 20px #babecc,
+                -10px -10px 20px #ffff;
+}
+
+
+@media screen and (max-width:800px){
+
+    .box{
+        display: block;
+        width: 100%;
+        padding-top: 9%;
+    }
+    .comentario{
+        display: block;
+    }
+
+    .box-perfil{
+        background-color: #ffffff;
+        border: 0px;
+        margin: 0 auto;
+        top: 29px;
+        z-index: 100;
+    }
+
+    .box-mensaje{
+        width: 96%;
+        background-color: transparent;
+        border-bottom: 2px solid rgb(147, 145, 145);
+        font-size: 13px;
+        margin: 0 auto;
+        height: 155px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+
+    .box-mensaje .nombre{
+        margin-top: -369px;
+    }
+    .box-mensaje .fecha_publicacion{
+        margin-top: -69px;
+        margin-left: -1%;
+    }
+    .box-mensaje .opinion{
+        margin-top: 16%;
+    }
+
+    .box-mensaje::before{
+        border-right: 35px solid transparent;
+    }
+ 
+
+}
+ 

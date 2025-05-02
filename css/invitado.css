@@ -1,0 +1,42 @@
+.contenedor-principal{
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.opciones{
+    width: 230px;
+    height: 300px;
+    background-color:transparent;
+    border: 2px solid black;
+    margin-bottom: 30px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 4px #4d4d4e;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.opciones:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1.2s;
+}
+.opciones a{
+    text-decoration: none;
+}
+
+.opciones i{
+    font-size: 120px;
+    color: #fbccff;
+}
+
+.opciones p{
+    font-size: 20px;
+    color: white;
+}

@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galeria{
+    font-family: "Alegreya", serif;
+}
+
+.galeriatitulo{
+    font-size: 1.5em;
+    color: white;
+}
+
+.linea{
+    border-top: 5px solid #fff;
+    margin-bottom: 40px;
+}
+
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 19%;
+    position: relative;
+    height:200px;
+    margin-bottom:9px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+
+
+.imagen:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+.imagen-galery{
+    height: 200px !important;
+}
+.Titulo-foto{
+    color: white;
+}
+/*formulario de subir foto*/
+
+.contenedor-solo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; 
+}
+.botonsubir{
+    width:100px;
+}
+
+.contenedor-form{
+    margin: 0 auto;
+    width: 40%;
+}
+.contenedor-integrante{
+    width: 90%;
+    margin: 0 auto;
+}
+.form-label, .form-control{
+    color: #fff;
+}
+.bio{
+    height: 200px;
+}
+
+.form-control{
+    background-color: transparent;
+}
+.form-control:focus{
+    background-color: transparent;
+}
+/*validar*/
+.formulario__mensaje{
+    height: 45px;
+    line-height: 45px;
+    background-color: rgb(234, 67, 67);
+    padding: 0 15px;
+    border-radius: 3px;
+    margin-bottom: 3%;
+}
+
+.formulario__input-error{
+    color:rgb(234, 67, 67) ;
+}
+
+
+
+#person{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.foto-solo {
+    position: relative;
+    width: 100%; /* Esto hará que el contenedor ocupe todo el ancho disponible */
+    max-width: 700px; /* Puedes ajustar el tamaño máximo según tus necesidades */
+    text-align: center;
+}
+
+.foto-solo img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+    max-width: 100%; /* Asegura que la imagen no exceda el tamaño del contenedor */
+}
+
+.foto-solo p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 1rem; /* Espacio entre la imagen y el párrafo */
+}
+
+.regresar {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #fcf5f5; /* Ajusta el color según tus necesidades */
+}
+
+.regresar i {
+    margin-right: 0.5rem;
+}
+
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+    .contenedor-form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+    .contenedor-form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 31%;
+        height: 100px;
+    }
+    .contenedor-form{
+        width: 80%;
+    }
+}
